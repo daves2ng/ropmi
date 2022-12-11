@@ -2,7 +2,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/ropmicom/public_html/church.ropmi.com/
+    - export DEPLOYPATH=/home1/ropmicom/public_html/church.ropmi.com
     - /bin/cp -R .vscode $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
