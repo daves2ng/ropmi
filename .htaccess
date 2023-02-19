@@ -1,0 +1,9 @@
+
+RewriteEngine on
+
+RewriteOptions inherit
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^church\.ropmi\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.church\.ropmi\.com$
+RewriteRule ^/?$ "https\:\/\/church\.ropmi\.com\/" [R=301,L]
